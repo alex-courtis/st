@@ -190,6 +190,7 @@ static void mousesel(XEvent *, int);
 static void mousereport(XEvent *);
 static char *kmap(KeySym, uint);
 static int match(uint, uint);
+static void colourinit();
 
 static void run(void);
 static void usage(void);
@@ -1985,6 +1986,18 @@ run(void)
 }
 
 void
+colourinit()
+{
+	srand(time(0));
+	theme = rand() % (LEN(themes) - 1) + 1;
+	colorname = themes[theme].colorname;
+	defaultbg = themes[theme].defaultbg;
+	defaultfg = themes[theme].defaultfg;
+	defaultcs = themes[theme].defaultcs;
+	defaultrcs = themes[theme].defaultrcs;
+}
+
+void
 usage(void)
 {
 	die("usage: %s [-aiv] [-c class] [-f font] [-g geometry]"
@@ -2055,6 +2068,7 @@ run:
 	if (!opt_title)
 		opt_title = (opt_line || !opt_cmd) ? "st" : opt_cmd[0];
 
+	colourinit();
 	setlocale(LC_CTYPE, "");
 	XSetLocaleModifiers("");
 	cols = MAX(cols, 1);

@@ -93,44 +93,102 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+static char **colorname;
+unsigned int defaultfg;
+unsigned int defaultbg;
+static unsigned int defaultcs;
+static unsigned int defaultrcs;
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+typedef struct {
+	char *colorname[16];
+	unsigned int defaultfg;
+	unsigned int defaultbg;
+	unsigned int defaultcs;
+	unsigned int defaultrcs;
+} Theme;
 
-	[255] = 0,
+static unsigned int theme;
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+static Theme themes[] = {
+	/* default (xterm) */ 
+	{
+		.colorname = {
+			"black",
+			"red3",
+			"green3",
+			"yellow3",
+			"blue2",
+			"magenta3",
+			"cyan3",
+			"gray90",
+
+			"gray50",
+			"red",
+			"green",
+			"yellow",
+			"#5c5cff",
+			"magenta",
+			"cyan",
+			"white",
+		},
+		.defaultfg = 7,
+		.defaultbg = 0,
+		.defaultcs = 15,
+		.defaultrcs = 0,
+	},
+
+	/* base16-bright */
+	{
+		.colorname = {
+			"#000000", /* base00 */
+			"#fb0120", /* base08 */
+			"#a1c659", /* base0B */
+			"#fda331", /* base0A */
+			"#6fb3d2", /* base0D */
+			"#d381c3", /* base0E */
+			"#76c7b7", /* base0C */
+			"#e0e0e0", /* base05 */
+			"#b0b0b0", /* base03 */
+			"#fc6d24", /* base09 */
+			"#303030", /* base01 */
+			"#505050", /* base02 */
+			"#d0d0d0", /* base04 */
+			"#f5f5f5", /* base06 */
+			"#be643c", /* base0F */
+			"#ffffff", /* base07 */
+		},
+		.defaultfg = 7,
+		.defaultbg = 0,
+		.defaultcs = 13,
+		.defaultrcs = 0,
+	},
+
+	/* base16-phd */
+	{
+		.colorname = {
+			"#061229", /* base00 */
+			"#d07346", /* base08 */
+			"#99bf52", /* base0B */
+			"#fbd461", /* base0A */
+			"#5299bf", /* base0D */
+			"#9989cc", /* base0E */
+			"#72b9bf", /* base0C */
+			"#b8bbc2", /* base05 */
+			"#717885", /* base03 */
+			"#f0a000", /* base09 */
+			"#2a3448", /* base01 */
+			"#4d5666", /* base02 */
+			"#9a99a3", /* base04 */
+			"#dbdde0", /* base06 */
+			"#b08060", /* base0F */
+			"#ffffff", /* base07 */
+		},
+		.defaultfg = 7,
+		.defaultbg = 0,
+		.defaultcs = 13,
+		.defaultrcs = 0,
+	},
 };
-
-
-/*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
- */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
