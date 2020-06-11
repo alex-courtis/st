@@ -93,14 +93,15 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-static char **colorname;
+static char **colour;
 unsigned int defaultfg;
 unsigned int defaultbg;
 static unsigned int defaultcs;
 static unsigned int defaultrcs;
 
 typedef struct {
-	char *colorname[16];
+	char *name;
+	char *colour[16];
 	unsigned int defaultfg;
 	unsigned int defaultbg;
 	unsigned int defaultcs;
@@ -110,9 +111,9 @@ typedef struct {
 static unsigned int theme;
 
 static Theme themes[] = {
-	/* default (xterm) */ 
 	{
-		.colorname = {
+		.name = "default",
+		.colour = {
 			"black",
 			"red3",
 			"green3",
@@ -121,7 +122,6 @@ static Theme themes[] = {
 			"magenta3",
 			"cyan3",
 			"gray90",
-
 			"gray50",
 			"red",
 			"green",
@@ -136,10 +136,9 @@ static Theme themes[] = {
 		.defaultcs = 15,
 		.defaultrcs = 0,
 	},
-
-	/* base16-bright */
 	{
-		.colorname = {
+		.name = "base16-bright",
+		.colour = {
 			"#000000", /* base00 */
 			"#fb0120", /* base08 */
 			"#a1c659", /* base0B */
@@ -162,10 +161,34 @@ static Theme themes[] = {
 		.defaultcs = 13,
 		.defaultrcs = 0,
 	},
-
-	/* base16-phd */
 	{
-		.colorname = {
+		.name = "base16-helios",
+		.colour = {
+			"#1d2021", /* base00 */
+			"#d72638", /* base08 */
+			"#88b92d", /* base0B */
+			"#f19d1a", /* base0A */
+			"#1e8bac", /* base0D */
+			"#be4264", /* base0E */
+			"#1ba595", /* base0C */
+			"#d5d5d5", /* base05 */
+			"#6f7579", /* base03 */
+			"#eb8413", /* base09 */
+			"#383c3e", /* base01 */
+			"#53585b", /* base02 */
+			"#cdcdcd", /* base04 */
+			"#dddddd", /* base06 */
+			"#c85e0d", /* base0F */
+			"#e5e5e5", /* base07 */
+		},
+		.defaultfg = 7,
+		.defaultbg = 0,
+		.defaultcs = 13,
+		.defaultrcs = 0,
+	},
+	{
+		.name = "base16-phd",
+		.colour = {
 			"#061229", /* base00 */
 			"#d07346", /* base08 */
 			"#99bf52", /* base0B */
