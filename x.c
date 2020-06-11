@@ -1998,15 +1998,21 @@ usetheme(unsigned int i)
 	defaultfg = themes[theme].defaultfg;
 	defaultcs = themes[theme].defaultcs;
 	defaultrcs = themes[theme].defaultrcs;
-	setenv("TERMINAL_THEME", themes[theme].name, 1);
 }
 
 void
 colourinit()
 {
+	size_t i, j;
+	size_t enabled[LEN(themes) - 1];
+
+	for (i = 1, j = 0; i < LEN(themes); i++)
+		if (themes[i].enabled)
+			enabled[j++] = i;
+
 	srand(time(0));
-	rtheme = rand() % (LEN(themes) - 1) + 1;
-	setenv("TERMINAL_THEME", themes[rtheme].name, 1);
+	rtheme = enabled[rand() % j];
+
 	usetheme(rtheme);
 }
 
