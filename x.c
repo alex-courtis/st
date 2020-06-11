@@ -1605,7 +1605,7 @@ xsettitle(char *p)
 	XTextProperty prop;
 	DEFAULT(p, opt_title);
 
-	snprintf(title, 2048, "%s   {%s}", p, name);
+	snprintf(title, 2048, "%s   {%s}", p, themes[rtheme].name);
 
 	Xutf8TextListToTextProperty(xw.dpy, &t, 1, XUTF8StringStyle,
 			&prop);
@@ -1999,7 +1999,6 @@ usetheme(unsigned int i)
 {
 	theme = i;
 	colour = themes[theme].colour;
-	name = themes[theme].name;
 	defaultbg = themes[theme].defaultbg;
 	defaultfg = themes[theme].defaultfg;
 	defaultcs = themes[theme].defaultcs;
