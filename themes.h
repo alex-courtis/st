@@ -2251,7 +2251,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-helios", .enabled = 1,
+		.name = "base16-helios", .enabled = 0,
 		.colour = {
 			"#1d2021", /* base00 */
 			"#d72638", /* base08 */
@@ -2401,7 +2401,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-humanoid-dark", .enabled = 1,
+		.name = "base16-humanoid-dark", .enabled = 0,
 		.colour = {
 			"#232629", /* base00 */
 			"#f11235", /* base08 */
