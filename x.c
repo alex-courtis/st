@@ -1599,10 +1599,14 @@ xsetenv(void)
 void
 xsettitle(char *p)
 {
+	static char title[2048];
+
 	XTextProperty prop;
 	DEFAULT(p, opt_title);
 
-	Xutf8TextListToTextProperty(xw.dpy, &p, 1, XUTF8StringStyle,
+	snprintf(title, 2048, "%s   {%s}", p, name);
+
+	Xutf8TextListToTextProperty(xw.dpy, ((char**)&title), 1, XUTF8StringStyle,
 			&prop);
 	XSetWMName(xw.dpy, xw.win, &prop);
 	XSetTextProperty(xw.dpy, xw.win, &prop, xw.netwmname);
@@ -1994,6 +1998,7 @@ usetheme(unsigned int i)
 {
 	theme = i;
 	colour = themes[theme].colour;
+	name = themes[theme].name;
 	defaultbg = themes[theme].defaultbg;
 	defaultfg = themes[theme].defaultfg;
 	defaultcs = themes[theme].defaultcs;

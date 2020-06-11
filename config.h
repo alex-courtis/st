@@ -94,6 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 static char **colour;
+static char *name;
 unsigned int defaultfg;
 unsigned int defaultbg;
 static unsigned int defaultcs;
