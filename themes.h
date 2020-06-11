@@ -1801,7 +1801,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-github", .enabled = 1,
+		.name = "base16-github", .enabled = 0,
 		.colour = {
 			"#ffffff", /* base00 */
 			"#ed6a43", /* base08 */
@@ -1826,7 +1826,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-google-dark", .enabled = 1,
+		.name = "base16-google-dark", .enabled = 0,
 		.colour = {
 			"#1d1f21", /* base00 */
 			"#CC342B", /* base08 */
@@ -1851,7 +1851,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-google-light", .enabled = 1,
+		.name = "base16-google-light", .enabled = 0,
 		.colour = {
 			"#ffffff", /* base00 */
 			"#CC342B", /* base08 */
@@ -1876,7 +1876,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-grayscale-dark", .enabled = 1,
+		.name = "base16-grayscale-dark", .enabled = 0,
 		.colour = {
 			"#101010", /* base00 */
 			"#7c7c7c", /* base08 */
@@ -1901,7 +1901,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-grayscale-light", .enabled = 1,
+		.name = "base16-grayscale-light", .enabled = 0,
 		.colour = {
 			"#f7f7f7", /* base00 */
 			"#7c7c7c", /* base08 */
@@ -1926,7 +1926,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-greenscreen", .enabled = 1,
+		.name = "base16-greenscreen", .enabled = 0,
 		.colour = {
 			"#001100", /* base00 */
 			"#007700", /* base08 */
@@ -1951,7 +1951,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-dark-hard", .enabled = 1,
+		.name = "base16-gruvbox-dark-hard", .enabled = 0,
 		.colour = {
 			"#1d2021", /* base00 */
 			"#fb4934", /* base08 */
@@ -1976,7 +1976,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-dark-medium", .enabled = 1,
+		.name = "base16-gruvbox-dark-medium", .enabled = 0,
 		.colour = {
 			"#282828", /* base00 */
 			"#fb4934", /* base08 */
@@ -2001,7 +2001,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-dark-pale", .enabled = 1,
+		.name = "base16-gruvbox-dark-pale", .enabled = 0,
 		.colour = {
 			"#262626", /* base00 */
 			"#d75f5f", /* base08 */
@@ -2026,7 +2026,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-dark-soft", .enabled = 1,
+		.name = "base16-gruvbox-dark-soft", .enabled = 0,
 		.colour = {
 			"#32302f", /* base00 */
 			"#fb4934", /* base08 */
@@ -2051,7 +2051,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-light-hard", .enabled = 1,
+		.name = "base16-gruvbox-light-hard", .enabled = 0,
 		.colour = {
 			"#f9f5d7", /* base00 */
 			"#9d0006", /* base08 */
@@ -2076,7 +2076,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-light-medium", .enabled = 1,
+		.name = "base16-gruvbox-light-medium", .enabled = 0,
 		.colour = {
 			"#fbf1c7", /* base00 */
 			"#9d0006", /* base08 */
@@ -2101,7 +2101,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-gruvbox-light-soft", .enabled = 1,
+		.name = "base16-gruvbox-light-soft", .enabled = 0,
 		.colour = {
 			"#f2e5bc", /* base00 */
 			"#9d0006", /* base08 */
@@ -2126,7 +2126,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-hardcore", .enabled = 1,
+		.name = "base16-hardcore", .enabled = 0,
 		.colour = {
 			"#212121", /* base00 */
 			"#f92672", /* base08 */
