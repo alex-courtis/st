@@ -26,7 +26,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-3024", .enabled = 1,
+		.name = "base16-3024", .enabled = 0,
 		.colour = {
 			"#090300", /* base00 */
 			"#db2d20", /* base08 */
@@ -51,7 +51,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-apathy", .enabled = 1,
+		.name = "base16-apathy", .enabled = 0,
 		.colour = {
 			"#031A16", /* base00 */
 			"#3E9688", /* base08 */
@@ -76,7 +76,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-ashes", .enabled = 1,
+		.name = "base16-ashes", .enabled = 0,
 		.colour = {
 			"#1C2023", /* base00 */
 			"#C7AE95", /* base08 */
@@ -101,7 +101,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-cave", .enabled = 1,
+		.name = "base16-atelier-cave", .enabled = 0,
 		.colour = {
 			"#19171c", /* base00 */
 			"#be4678", /* base08 */
@@ -126,7 +126,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-cave-light", .enabled = 1,
+		.name = "base16-atelier-cave-light", .enabled = 0,
 		.colour = {
 			"#efecf4", /* base00 */
 			"#be4678", /* base08 */
@@ -151,7 +151,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-dune", .enabled = 1,
+		.name = "base16-atelier-dune", .enabled = 0,
 		.colour = {
 			"#20201d", /* base00 */
 			"#d73737", /* base08 */
@@ -176,7 +176,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-dune-light", .enabled = 1,
+		.name = "base16-atelier-dune-light", .enabled = 0,
 		.colour = {
 			"#fefbec", /* base00 */
 			"#d73737", /* base08 */
@@ -201,7 +201,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-estuary", .enabled = 1,
+		.name = "base16-atelier-estuary", .enabled = 0,
 		.colour = {
 			"#22221b", /* base00 */
 			"#ba6236", /* base08 */
@@ -226,7 +226,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-estuary-light", .enabled = 1,
+		.name = "base16-atelier-estuary-light", .enabled = 0,
 		.colour = {
 			"#f4f3ec", /* base00 */
 			"#ba6236", /* base08 */
@@ -251,7 +251,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-forest", .enabled = 1,
+		.name = "base16-atelier-forest", .enabled = 0,
 		.colour = {
 			"#1b1918", /* base00 */
 			"#f22c40", /* base08 */
@@ -276,7 +276,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-forest-light", .enabled = 1,
+		.name = "base16-atelier-forest-light", .enabled = 0,
 		.colour = {
 			"#f1efee", /* base00 */
 			"#f22c40", /* base08 */
@@ -301,7 +301,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-heath", .enabled = 1,
+		.name = "base16-atelier-heath", .enabled = 0,
 		.colour = {
 			"#1b181b", /* base00 */
 			"#ca402b", /* base08 */
@@ -326,7 +326,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-heath-light", .enabled = 1,
+		.name = "base16-atelier-heath-light", .enabled = 0,
 		.colour = {
 			"#f7f3f7", /* base00 */
 			"#ca402b", /* base08 */
@@ -351,7 +351,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-lakeside", .enabled = 1,
+		.name = "base16-atelier-lakeside", .enabled = 0,
 		.colour = {
 			"#161b1d", /* base00 */
 			"#d22d72", /* base08 */
@@ -376,7 +376,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-lakeside-light", .enabled = 1,
+		.name = "base16-atelier-lakeside-light", .enabled = 0,
 		.colour = {
 			"#ebf8ff", /* base00 */
 			"#d22d72", /* base08 */
@@ -401,7 +401,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-plateau", .enabled = 1,
+		.name = "base16-atelier-plateau", .enabled = 0,
 		.colour = {
 			"#1b1818", /* base00 */
 			"#ca4949", /* base08 */
@@ -426,7 +426,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-plateau-light", .enabled = 1,
+		.name = "base16-atelier-plateau-light", .enabled = 0,
 		.colour = {
 			"#f4ecec", /* base00 */
 			"#ca4949", /* base08 */
@@ -451,7 +451,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-savanna", .enabled = 1,
+		.name = "base16-atelier-savanna", .enabled = 0,
 		.colour = {
 			"#171c19", /* base00 */
 			"#b16139", /* base08 */
@@ -476,7 +476,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-savanna-light", .enabled = 1,
+		.name = "base16-atelier-savanna-light", .enabled = 0,
 		.colour = {
 			"#ecf4ee", /* base00 */
 			"#b16139", /* base08 */
@@ -501,7 +501,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-seaside", .enabled = 1,
+		.name = "base16-atelier-seaside", .enabled = 0,
 		.colour = {
 			"#131513", /* base00 */
 			"#e6193c", /* base08 */
@@ -526,7 +526,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-seaside-light", .enabled = 1,
+		.name = "base16-atelier-seaside-light", .enabled = 0,
 		.colour = {
 			"#f4fbf4", /* base00 */
 			"#e6193c", /* base08 */
@@ -551,7 +551,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-sulphurpool", .enabled = 1,
+		.name = "base16-atelier-sulphurpool", .enabled = 0,
 		.colour = {
 			"#202746", /* base00 */
 			"#c94922", /* base08 */
@@ -576,7 +576,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atelier-sulphurpool-light", .enabled = 1,
+		.name = "base16-atelier-sulphurpool-light", .enabled = 0,
 		.colour = {
 			"#f5f7ff", /* base00 */
 			"#c94922", /* base08 */
@@ -601,7 +601,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-atlas", .enabled = 1,
+		.name = "base16-atlas", .enabled = 0,
 		.colour = {
 			"#002635", /* base00 */
 			"#ff5a67", /* base08 */
@@ -626,7 +626,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-bespin", .enabled = 1,
+		.name = "base16-bespin", .enabled = 0,
 		.colour = {
 			"#28211c", /* base00 */
 			"#cf6a4c", /* base08 */
@@ -651,7 +651,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-bathory", .enabled = 1,
+		.name = "base16-black-metal-bathory", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -676,7 +676,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-burzum", .enabled = 1,
+		.name = "base16-black-metal-burzum", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -701,7 +701,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-dark-funeral", .enabled = 1,
+		.name = "base16-black-metal-dark-funeral", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -726,7 +726,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-gorgoroth", .enabled = 1,
+		.name = "base16-black-metal-gorgoroth", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -751,7 +751,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal", .enabled = 1,
+		.name = "base16-black-metal", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -776,7 +776,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-immortal", .enabled = 1,
+		.name = "base16-black-metal-immortal", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -801,7 +801,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-khold", .enabled = 1,
+		.name = "base16-black-metal-khold", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -826,7 +826,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-marduk", .enabled = 1,
+		.name = "base16-black-metal-marduk", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -851,7 +851,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-mayhem", .enabled = 1,
+		.name = "base16-black-metal-mayhem", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -876,7 +876,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-nile", .enabled = 1,
+		.name = "base16-black-metal-nile", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -901,7 +901,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-black-metal-venom", .enabled = 1,
+		.name = "base16-black-metal-venom", .enabled = 0,
 		.colour = {
 			"#000000", /* base00 */
 			"#5f8787", /* base08 */
@@ -976,7 +976,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-brogrammer", .enabled = 1,
+		.name = "base16-brogrammer", .enabled = 0,
 		.colour = {
 			"#1f1f1f", /* base00 */
 			"#d6dbe5", /* base08 */
@@ -1001,7 +1001,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-brushtrees-dark", .enabled = 1,
+		.name = "base16-brushtrees-dark", .enabled = 0,
 		.colour = {
 			"#485867", /* base00 */
 			"#b38686", /* base08 */
@@ -1026,7 +1026,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-brushtrees", .enabled = 1,
+		.name = "base16-brushtrees", .enabled = 0,
 		.colour = {
 			"#E3EFEF", /* base00 */
 			"#b38686", /* base08 */
@@ -1051,7 +1051,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-chalk", .enabled = 1,
+		.name = "base16-chalk", .enabled = 0,
 		.colour = {
 			"#151515", /* base00 */
 			"#fb9fb1", /* base08 */
