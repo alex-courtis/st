@@ -101,6 +101,7 @@ static unsigned int defaultrcs;
 
 typedef struct {
 	char *name;
+	unsigned int enabled;
 	char *colour[16];
 	unsigned int defaultfg;
 	unsigned int defaultbg;
@@ -109,109 +110,8 @@ typedef struct {
 } Theme;
 
 static unsigned int theme;
-
-static Theme themes[] = {
-	{
-		.name = "default",
-		.colour = {
-			"black",
-			"red3",
-			"green3",
-			"yellow3",
-			"blue2",
-			"magenta3",
-			"cyan3",
-			"gray90",
-			"gray50",
-			"red",
-			"green",
-			"yellow",
-			"#5c5cff",
-			"magenta",
-			"cyan",
-			"white",
-		},
-		.defaultfg = 7,
-		.defaultbg = 0,
-		.defaultcs = 15,
-		.defaultrcs = 0,
-	},
-	{
-		.name = "base16-bright",
-		.colour = {
-			"#000000", /* base00 */
-			"#fb0120", /* base08 */
-			"#a1c659", /* base0B */
-			"#fda331", /* base0A */
-			"#6fb3d2", /* base0D */
-			"#d381c3", /* base0E */
-			"#76c7b7", /* base0C */
-			"#e0e0e0", /* base05 */
-			"#b0b0b0", /* base03 */
-			"#fc6d24", /* base09 */
-			"#303030", /* base01 */
-			"#505050", /* base02 */
-			"#d0d0d0", /* base04 */
-			"#f5f5f5", /* base06 */
-			"#be643c", /* base0F */
-			"#ffffff", /* base07 */
-		},
-		.defaultfg = 7,
-		.defaultbg = 0,
-		.defaultcs = 13,
-		.defaultrcs = 0,
-	},
-	{
-		.name = "base16-helios",
-		.colour = {
-			"#1d2021", /* base00 */
-			"#d72638", /* base08 */
-			"#88b92d", /* base0B */
-			"#f19d1a", /* base0A */
-			"#1e8bac", /* base0D */
-			"#be4264", /* base0E */
-			"#1ba595", /* base0C */
-			"#d5d5d5", /* base05 */
-			"#6f7579", /* base03 */
-			"#eb8413", /* base09 */
-			"#383c3e", /* base01 */
-			"#53585b", /* base02 */
-			"#cdcdcd", /* base04 */
-			"#dddddd", /* base06 */
-			"#c85e0d", /* base0F */
-			"#e5e5e5", /* base07 */
-		},
-		.defaultfg = 7,
-		.defaultbg = 0,
-		.defaultcs = 13,
-		.defaultrcs = 0,
-	},
-	{
-		.name = "base16-phd",
-		.colour = {
-			"#061229", /* base00 */
-			"#d07346", /* base08 */
-			"#99bf52", /* base0B */
-			"#fbd461", /* base0A */
-			"#5299bf", /* base0D */
-			"#9989cc", /* base0E */
-			"#72b9bf", /* base0C */
-			"#b8bbc2", /* base05 */
-			"#717885", /* base03 */
-			"#f0a000", /* base09 */
-			"#2a3448", /* base01 */
-			"#4d5666", /* base02 */
-			"#9a99a3", /* base04 */
-			"#dbdde0", /* base06 */
-			"#b08060", /* base0F */
-			"#ffffff", /* base07 */
-		},
-		.defaultfg = 7,
-		.defaultbg = 0,
-		.defaultcs = 13,
-		.defaultrcs = 0,
-	},
-};
+static unsigned int rtheme;
+#include "themes.h"
 
 /*
  * Default shape of cursor
@@ -280,6 +180,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
+	{ TERMMOD,              XK_X,           dtheme,         {.i =  0} },
 };
 
 /*

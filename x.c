@@ -60,6 +60,11 @@ static void zoomabs(const Arg *);
 static void zoomreset(const Arg *);
 static void ttysend(const Arg *);
 
+/* theme support */
+static void usetheme(unsigned int);
+static void colourinit();
+static void dtheme();
+
 /* config.h for applying patches and the configuration. */
 #include "config.h"
 
@@ -190,7 +195,6 @@ static void mousesel(XEvent *, int);
 static void mousereport(XEvent *);
 static char *kmap(KeySym, uint);
 static int match(uint, uint);
-static void colourinit();
 
 static void run(void);
 static void usage(void);
@@ -1986,16 +1990,34 @@ run(void)
 }
 
 void
-colourinit()
+usetheme(unsigned int i)
 {
-	srand(time(0));
-	theme = rand() % (LEN(themes) - 1) + 1;
+	theme = i;
 	colour = themes[theme].colour;
 	defaultbg = themes[theme].defaultbg;
 	defaultfg = themes[theme].defaultfg;
 	defaultcs = themes[theme].defaultcs;
 	defaultrcs = themes[theme].defaultrcs;
 	setenv("TERMINAL_THEME", themes[theme].name, 1);
+}
+
+void
+colourinit()
+{
+	srand(time(0));
+	rtheme = rand() % (LEN(themes) - 1) + 1;
+	usetheme(rtheme);
+}
+
+void
+dtheme()
+{
+	if (theme == 0)
+		usetheme(rtheme);
+	else
+		usetheme(0);
+	xloadcols();
+	cresize(win.w, win.h);
 }
 
 void
