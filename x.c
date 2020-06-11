@@ -1600,13 +1600,14 @@ void
 xsettitle(char *p)
 {
 	static char title[2048];
+	static char *t = title;
 
 	XTextProperty prop;
 	DEFAULT(p, opt_title);
 
 	snprintf(title, 2048, "%s   {%s}", p, name);
 
-	Xutf8TextListToTextProperty(xw.dpy, ((char**)&title), 1, XUTF8StringStyle,
+	Xutf8TextListToTextProperty(xw.dpy, &t, 1, XUTF8StringStyle,
 			&prop);
 	XSetWMName(xw.dpy, xw.win, &prop);
 	XSetTextProperty(xw.dpy, xw.win, &prop, xw.netwmname);
