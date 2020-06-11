@@ -2006,6 +2006,7 @@ colourinit()
 {
 	srand(time(0));
 	rtheme = rand() % (LEN(themes) - 1) + 1;
+	setenv("TERMINAL_THEME", themes[rtheme].name, 1);
 	usetheme(rtheme);
 }
 

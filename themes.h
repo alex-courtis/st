@@ -1,6 +1,7 @@
 static Theme themes[] = {
 	{
 		.name = "default",
+		.enabled = 1,
 		.colour = {
 			"black",
 			"red3",
