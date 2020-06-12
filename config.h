@@ -93,25 +93,11 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-static char **colour;
+static char **colorname;
 unsigned int defaultfg;
 unsigned int defaultbg;
 static unsigned int defaultcs;
 static unsigned int defaultrcs;
-
-typedef struct {
-	char *name;
-	unsigned int enabled;
-	char *colour[16];
-	unsigned int defaultfg;
-	unsigned int defaultbg;
-	unsigned int defaultcs;
-	unsigned int defaultrcs;
-} Theme;
-
-static unsigned int theme;
-static unsigned int rtheme;
-#include "themes.h"
 
 /*
  * Default shape of cursor
