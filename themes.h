@@ -2126,7 +2126,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-hardcore", .enabled = 0,
+		.name = "base16-hardcore", .enabled = 1,
 		.colour = {
 			"#212121", /* base00 */
 			"#f92672", /* base08 */
@@ -3601,7 +3601,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-synth-midnight-dark", .enabled = 0,
+		.name = "base16-synth-midnight-dark", .enabled = 1,
 		.colour = {
 			"#050608", /* base00 */
 			"#b53b50", /* base08 */
