@@ -2139,7 +2139,7 @@ static Theme themes[] = {
 		.defaultrcs = 0,
 	},
 	{
-		.name = "base16-hardcore", .enabled = 1,
+		.name = "base16-hardcore", .enabled = 0,
 		.colorname = {
 			"#212121", /* base00 */
 			"#f92672", /* base08 */
