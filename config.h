@@ -93,18 +93,7 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
-/*
-* base16-default-dark-theme.h
-*
-* Base16: (https://github.com/chriskempson/base16)
-*
-* Authors:
-*
-* Scheme: Chris Kempson (http://chriskempson.com)
-* Template: Honza Pokorny <me@honza.ca>
-*
-*/
+/* extended base16-default-dark from https://github.com/chriskempson/base16-shell */
 static const char *colorname[] = {
   "#181818", /* base00 */
   "#ab4642", /* base08 */
@@ -114,14 +103,25 @@ static const char *colorname[] = {
   "#ba8baf", /* base0E */
   "#86c1b9", /* base0C */
   "#d8d8d8", /* base05 */
+
   "#585858", /* base03 */
+
+  /* bright colour variants created by increasing the value to 100 in pinta */
+  "#FF6862", /* base08 */
+  "#E3FF98", /* base0B */
+  "#FFD18C", /* base0A */
+  "#A3E6FF", /* base0D */
+  "#FFBFF0", /* base0E */
+  "#B1FFF4", /* base0C */
+
+  "#f8f8f8", /* base07 */
+
   "#dc9656", /* base09 */
+  "#a16946", /* base0F */
   "#282828", /* base01 */
   "#383838", /* base02 */
   "#b8b8b8", /* base04 */
   "#e8e8e8", /* base06 */
-  "#a16946", /* base0F */
-  "#f8f8f8", /* base07 */
 };
 
 
