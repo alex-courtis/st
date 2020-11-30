@@ -106,13 +106,13 @@ static const char *colorname[] = {
 
   "#585858", /* base03 */
 
-  /* bright colour variants created by increasing the value to 100 in pinta */
-  "#FF6862", /* base08 */
-  "#E3FF98", /* base0B */
-  "#FFD18C", /* base0A */
-  "#A3E6FF", /* base0D */
-  "#FFBFF0", /* base0E */
-  "#B1FFF4", /* base0C */
+  /* bright colour variants created by multiplying LCh by 1.25 in GIMP */
+  "#cb635c",
+  "#d2e69a",
+  "#ffffc1",
+  "#abdef2",
+  "#e7b6db",
+  "#b9f5ed",
 
   "#f8f8f8", /* base07 */
 
