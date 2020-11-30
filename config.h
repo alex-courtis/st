@@ -93,35 +93,35 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* extended base16-default-dark from https://github.com/chriskempson/base16-shell */
+/* extended base16-bright from https://github.com/chriskempson/base16-shell */
 static const char *colorname[] = {
-  "#181818", /* base00 */
-  "#ab4642", /* base08 */
-  "#a1b56c", /* base0B */
-  "#f7ca88", /* base0A */
-  "#7cafc2", /* base0D */
-  "#ba8baf", /* base0E */
-  "#86c1b9", /* base0C */
-  "#d8d8d8", /* base05 */
-
-  "#585858", /* base03 */
+  /* normal */
+  "#000000", /* base00 */
+  "#fb0120", /* base08 */
+  "#a1c659", /* base0B */
+  "#fda331", /* base0A */
+  "#6fb3d2", /* base0D */
+  "#d381c3", /* base0E */
+  "#76c7b7", /* base0C */
+  "#e0e0e0", /* base05 */
 
   /* bright colour variants created by multiplying LCh by 1.25 in GIMP */
-  "#cb635c",
-  "#d2e69a",
-  "#ffffc1",
-  "#abdef2",
-  "#e7b6db",
-  "#b9f5ed",
+  "#b0b0b0", /* base03 */
+  "#ff4b3f",
+  "#d6fc8b",
+  "#ffd765",
+  "#9fe3ff",
+  "#ffadf1",
+  "#aafceb",
+  "#ffffff", /* base07 */
 
-  "#f8f8f8", /* base07 */
-
-  "#dc9656", /* base09 */
-  "#a16946", /* base0F */
-  "#282828", /* base01 */
-  "#383838", /* base02 */
-  "#b8b8b8", /* base04 */
-  "#e8e8e8", /* base06 */
+  /* extended, normally occupying the bright colour variants */
+  "#fc6d24", /* base09 */
+  "#be643c", /* base0F */
+  "#303030", /* base01 */
+  "#505050", /* base02 */
+  "#d0d0d0", /* base04 */
+  "#f5f5f5", /* base06 */
 };
 
 
