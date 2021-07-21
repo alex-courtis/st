@@ -94,6 +94,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* extended base16-bright from https://github.com/chriskempson/base16-shell */
+/* sync with .Xresources et al */
 static const char *colorname[] = {
   /* normal */
   "#000000", /* base00 */
